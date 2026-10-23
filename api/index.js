@@ -270,4 +270,6 @@ if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
 }
 
 // Export the app so Vercel can run it as a serverless function
-export default app;
+export default function handler(req, res) {
+  return app(req, res);
+}
