@@ -12,7 +12,7 @@ import {
   transferSchema, lookupSchema, actionSchema, parseOrThrow, parseJsonField,
   assertFileCount, generateAssetNumber, uploadImages, removeImages, withSignedImages,
   sendNewTransferEmail, sendStatusEmail, verifyMailer,
-} from './services.js';
+} from './_services.js';
 
 const app = express();
 if (config.trustProxy) app.set('trust proxy', config.trustProxy);
